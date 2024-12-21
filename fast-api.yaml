@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    pod-name: fast-api-pod2
+  name: fast-api-pod2
+spec:
+  containers:
+  - name: redis-api-container
+    image: egojins2/redis-api:1.0
+    ports:
+    - containerPort: 8000  # Dockerfile에서 설정한 포트와 일치시켜야 함
+  restartPolicy: OnFailure
+
