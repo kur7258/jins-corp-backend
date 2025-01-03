@@ -1,5 +1,5 @@
 FROM python:3.11.9
-COPY . /src
+COPY ./src /src
 WORKDIR /src
 
 RUN pip install -r requirements.txt
