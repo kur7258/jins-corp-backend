@@ -1,3 +1,3 @@
 @REM Author : carrier1269@github.com
 
-python main.py
+python ./src/main.py
